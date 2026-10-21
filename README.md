@@ -4,7 +4,7 @@
 #### Software Engineers: Molly Gustafson, Natan Berhanu, Alani Oyegade<br><br>
 
 ##### JUMP TO:
-[→ Go to 📖 System & Developer Manual](#system--developer-manual) 
+[→ Go to 📖 System & Developer Manual](#-system--developer-manual) 
 <br><br>
 ##### PROBLEM & SOLUTION
 ---
