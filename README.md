@@ -18,7 +18,7 @@
 ##### TECH STACK
 ---
 
-##### 📖 System & Developer Manual 
+##### 📖 SYSTEM & DEVELOPER MANUAL 
 ---
 Summary 
 
