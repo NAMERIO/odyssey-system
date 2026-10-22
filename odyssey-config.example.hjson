@@ -1,0 +1,6 @@
+{
+    database: {
+        enabled: true
+        url: "postgresql://postgres:postgres@127.0.0.1:54322/postgres"
+    }
+}
