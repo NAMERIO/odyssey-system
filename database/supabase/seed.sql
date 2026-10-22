@@ -1,0 +1,2 @@
+-- Test data for local development. Runs after the migrations on every `pnpm db:reset`.
+-- Never put real patient data here.

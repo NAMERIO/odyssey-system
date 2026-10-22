@@ -1,0 +1,31 @@
+{
+  "name": "odyssey-system",
+  "private": true,
+  "type": "module",
+  "description": "Odyssey healthcare management system",
+  "scripts": {
+    "install:all": "pnpm install && uv --directory server sync",
+    "dev": "pnpm -r --parallel dev",
+    "dev:server": "pnpm --filter @odyssey/server dev",
+    "dev:client": "pnpm --filter @odyssey/client dev",
+    "dev:electron": "pnpm --filter @odyssey/desktop dev",
+    "build": "pnpm --filter @odyssey/client build && pnpm --filter @odyssey/desktop build",
+    "test": "uv --directory server run pytest",
+    "lint": "biome check --write && uv --directory server run ruff check --fix . ../database && uv --directory server run ruff format . ../database",
+    "lint:ci": "biome check && uv --directory server run ruff check . ../database && uv --directory server run ruff format --check . ../database",
+    "supabase": "supabase --workdir database",
+    "db:start": "supabase --workdir database start",
+    "db:stop": "supabase --workdir database stop",
+    "db:reset": "supabase --workdir database db reset",
+    "db:new": "supabase --workdir database migration new",
+    "db:push": "supabase --workdir database db push"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "supabase": "^2.121.0"
+  },
+  "packageManager": "pnpm@11.18.0"
+}

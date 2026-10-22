@@ -1,0 +1,7 @@
+{
+  "name": "@odyssey/server",
+  "private": true,
+  "scripts": {
+    "dev": "uv run python -m src --reload"
+  }
+}
