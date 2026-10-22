@@ -40,7 +40,7 @@
 ---
 
 ##### Prerequisites:
-Download & install [node.js](https://nodejs.org/en/download), [pnpm](https://pnpm.io/), [uv](https://docs.astral.sh/uv/) & [Docker Desktop](https://docs.docker.com/get-started/)
+Download & install [node.js](https://nodejs.org/en/download), [pnpm](https://pnpm.io/), [uv](https://docs.astral.sh/uv/) & [Docker](https://docs.docker.com/get-started/)
 
 ##### Installation:
 ```sh
