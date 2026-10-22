@@ -28,9 +28,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: supabase/setup-cli@v1
-      - run: supabase db start --workdir database
-      - run: supabase db lint --workdir database --fail-on error
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm supabase db start
+      - run: pnpm supabase db lint --fail-on error
 
   client:
     name: Client and desktop
